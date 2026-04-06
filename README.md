@@ -31,7 +31,7 @@ Browse the use-case directory below. Each piece is independent -- grab what you 
 | [/research](prompt-engineering/research-workflow/) | Prompt Engineering | Multi-perspective research with parallel agents. 3 investigators debate a topic before synthesizing findings. |
 | [/package](project-management/package-workflow/) | Project Management | Shape any deliverable for its specific audience. Same content, different packaging for different readers. |
 | [/monitor](monitoring/monitor-watchdog/) | Monitoring | Autonomous watchdog for long-running processes. Delta-based ETAs, adaptive polling frequency, two-tier intelligence (script + agent), and safe auto-intervention on stalls. |
-| [/request](project-management/request-lifecycle/) | Project Management | Structured capture >> develop >> audit cycle for bugs, improvements, and cross-session work. Every fix produces a documentation trail. |
+| [/request](project-management/request-lifecycle/) | Project Management | 6-skill family: capture >> develop >> audit cycle for bugs, improvements, and cross-session work. Hub routes to capture, develop, audit, verify, and close. Every fix produces a documentation trail. |
 | [/wrap](project-management/session-wrap/) | Project Management | Session wrap-up with narrative accomplishments, decision capture, auto-commit, and daily logging. Clean handoff to your future self. |
 
 ### CLAUDE.md Sections (paste into your CLAUDE.md)
