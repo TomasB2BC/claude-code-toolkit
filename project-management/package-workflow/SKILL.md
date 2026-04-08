@@ -59,7 +59,7 @@ Based on --type and --topic, collect the raw material to package:
 git log --oneline -10 2>/dev/null
 
 # Project state
-cat .planning/STATE.md 2>/dev/null | head -50
+cat README.md 2>/dev/null | head -50
 
 # Relevant files (if --topic narrows the scope)
 # Search for topic-related content in the project

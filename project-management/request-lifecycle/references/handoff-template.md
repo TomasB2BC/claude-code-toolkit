@@ -41,7 +41,7 @@ title: "{descriptive title}"
 ## Acceptance Criteria
 {How to verify the fix works. Reproducible commands and expected results.}
 
-## Skill-Creator Brief
+## Developer Brief
 {Only if affected system is a skill. What the skill should do, test cases,
 expected behavior, edge cases. This section feeds the developer who picks
 up this request.}

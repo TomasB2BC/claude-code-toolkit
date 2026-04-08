@@ -41,7 +41,7 @@ You were THERE when this happened. Pull from conversation history -- do NOT inte
 7. **Affected systems** -- file paths, modules, tools
 8. **Acceptance criteria** -- how to verify a fix works
 
-If the affected system is a skill, add a **Skill-Creator Brief** section: what should change in the skill, test cases, expected behavior, edge cases. This section feeds the developer who picks up the request.
+If the affected system is a skill, add a **Developer Brief** section: what should change in the skill, test cases, expected behavior, edge cases. This section feeds the developer who picks up the request.
 
 ### Step 1.5: Multi-System Detection
 
@@ -90,7 +90,7 @@ Use when a skill or module needs intentional improvement -- not a bug, but a fea
 
 ### Step 1: Write handoff document
 
-Same as Report Mode Step 2, but framed as an improvement. The **Skill-Creator Brief** section is mandatory in update mode (since it always involves a skill).
+Same as Report Mode Step 2, but framed as an improvement. The **Developer Brief** section is mandatory in update mode (since it always involves a skill).
 
 ### Step 2: Confirm
 

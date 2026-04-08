@@ -50,7 +50,7 @@ Collect relevant context to orient the researchers:
 # Grab project-level context if available
 PROJECT_CONTEXT=""
 [ -f "CLAUDE.md" ] && PROJECT_CONTEXT=$(head -50 CLAUDE.md)
-[ -f ".planning/STATE.md" ] && PROJECT_CONTEXT="$PROJECT_CONTEXT\n$(head -30 .planning/STATE.md)"
+[ -f "README.md" ] && PROJECT_CONTEXT="$PROJECT_CONTEXT\n$(head -30 README.md)"
 ```
 
 ## Step 4: Spawn Research Agents

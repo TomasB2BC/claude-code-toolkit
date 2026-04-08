@@ -47,17 +47,17 @@ Read the handoff doc and extract:
 | status | frontmatter | If `resolved`, warn: "This request is already resolved. Re-open it?" |
 | system | frontmatter | Identifies the target file/module |
 | Acceptance Criteria | section | Exit gate -- every criterion must pass with evidence |
-| Skill-Creator Brief | section | Spec input -- tells you WHAT to change |
+| Developer Brief | section | Spec input -- tells you WHAT to change |
 | Affected Systems | section | Scope assessment for routing |
 
 ## Step 3: Route to Approach
 
 Routing decides HOW you make the change. It does NOT affect the trail -- Steps 4 and 5 are identical regardless of route. There is no "simple" path that skips documentation.
 
-If a Skill-Creator Brief exists in the handoff doc, use it as your spec -- it tells you what to change, test cases, and edge cases.
+If a Developer Brief exists in the handoff doc, use it as your spec -- it tells you what to change, test cases, and edge cases.
 
 ```
-Assess from Affected Systems + Skill-Creator Brief + Context section:
+Assess from Affected Systems + Developer Brief + Context section:
   |
   Bug with symptoms but unknown root cause? Multiple symptoms that might share a cause?
     YES --> Debug route
@@ -179,7 +179,7 @@ Print the resolved list:
 
 **File conflict detection:**
 1. For each request, extract the `system:` field -- this is the primary file it modifies
-2. Also scan the Skill-Creator Brief for additional file paths
+2. Also scan the Developer Brief for additional file paths
 3. If two requests share ANY target file, they CONFLICT and cannot run in parallel
 
 **Partition into execution groups:**
