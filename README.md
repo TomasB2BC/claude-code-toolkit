@@ -105,6 +105,15 @@ The CLAUDE.md sections work the same way -- they're not feature toggles, they're
 
 ---
 
+## Testing
+
+```bash
+# Structural validation -- checks all skills for broken references, leakage, frontmatter
+python tests/test_structural.py
+```
+
+No dependencies beyond Python 3.10+. Exits 0 on pass, 1 on fail.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on submitting skills or sections.
