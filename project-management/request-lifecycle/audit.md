@@ -100,10 +100,18 @@ Before suggesting close, check whether the lifecycle is already complete:
 
 **If issues found (M > 0):**
 
-For each ISSUE, create a request doc automatically:
+**HARD GATE: The audit is NOT COMPLETE until every issue has a tracking artifact.** Do NOT proceed to develop, do NOT move to another task, do NOT report "audit done" until this step finishes.
+
+For each ISSUE, create a request doc automatically (or update an existing one if the issue relates to an already-tracked request):
 - Use the handoff template from `references/handoff-template.md`
 - Batch-create all docs without pausing between each
 - Include the audit evidence as the Evidence section
+- Report the created/updated doc paths in the audit output:
+  ```
+  >> Issues captured:
+     [1] requests/active/{filename1}
+     [2] requests/active/{filename2}
+  ```
 
 After capturing, offer to fix them immediately or defer to a fresh session.
 

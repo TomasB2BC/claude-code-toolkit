@@ -43,6 +43,23 @@ You were THERE when this happened. Pull from conversation history -- do NOT inte
 
 If the affected system is a skill, add a **Skill-Creator Brief** section: what should change in the skill, test cases, expected behavior, edge cases. This section feeds the developer who picks up the request.
 
+### Step 1.5: Multi-System Detection
+
+Check the Affected Systems from Step 1. If they span 2+ independent directories, create SEPARATE requests for each system instead of one combined request.
+
+**Split signals:**
+- Systems include both a "producer" (engine, generator, builder) and a "consumer" (validator, auditor, checker)
+- Issue mentions two independent modules that happen to share a symptom
+- User explicitly says "for both", "dual issue", or names two skills
+
+**When splitting:**
+- Each request gets its own slug, own `system:` field, own Acceptance Criteria scoped to that system
+- Each request references the other via `## Related Requests` section
+- Both share the same Context and Evidence sections (copy, don't summarize)
+- Report all created docs in the confirmation output
+
+**When NOT splitting:** If all systems are within one skill directory (e.g., SKILL.md + its implementation), keep as single request.
+
 ### Step 2: Write the handoff document
 
 Read the template from `references/handoff-template.md` (included in this skill family) and write the document to:

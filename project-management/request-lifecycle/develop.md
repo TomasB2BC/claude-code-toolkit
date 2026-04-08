@@ -106,6 +106,8 @@ After the work is done, go through each acceptance criterion from the handoff do
 
 Do not skip this step. Do not mark criteria as "assumed passing." Run the actual checks.
 
+**Behavioral test mandate (skills):** If the change modifies a skill file, grepping for the text you just wrote is NOT verification. You must test the skill behaviorally: simulate an invocation with representative input and verify the output matches expectations. "Evidence" means actual output, not quotes from the file you edited.
+
 ## Step 5: Produce the Trail (NON-NEGOTIABLE)
 
 This is the most important step. A 2-line typo fix gets the same treatment as a 200-line rewrite. The trail IS the product. The fix is a side effect.
@@ -206,6 +208,12 @@ After all agents complete, present the consolidated summary:
    [OK] request-b: resolved -- 1 file changed
    [X]  request-c: FAILED -- acceptance criterion 3 failed (see handoff doc)
 ```
+
+### B5: Error Handling
+
+- **Request doc missing or malformed:** Skip with warning, continue batch. Do not block other requests.
+- **Agent failure:** Report which request failed and why. Other agents continue independently.
+- **Timeout:** If an agent has not completed after 15 minutes, report it as timed out. Do not block other agents.
 
 ## Rules
 
